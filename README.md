@@ -32,6 +32,6 @@ Attach videos if you are available
 <br/><br/><br/>
 
 ## :people_hugging: Authors
-&nbsp;&nbsp;|![image](https://avatars.githubusercontent.com/u/66589666?v=4)|![image](https://avatars.githubusercontent.com/u/167062043?v=4)|&nbsp;&nbsp;
-&nbsp;&nbsp;|:-:|:-:|&nbsp;&nbsp;
-&nbsp;&nbsp;|[김지희(Joy)](https://github.com/jihee-daily)|[박혜지(Hedy)](https://github.com/hyeparkc)|&nbsp;&nbsp;
+|![image](https://avatars.githubusercontent.com/u/66589666?v=4)|![image](https://avatars.githubusercontent.com/u/167062043?v=4)|
+|:-:|:-:|
+|[김지희(Joy)](https://github.com/jihee-daily)|[박혜지(Hedy)](https://github.com/hyeparkc)|
