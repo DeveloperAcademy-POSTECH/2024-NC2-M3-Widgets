@@ -12,32 +12,34 @@ struct StoreView: View {
     @State private var isStoreButtonTapped = false
     @State private var selectedTab: Int = 0
     @State var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                VStack {
-                    ZStack {
-                        title
-                        HStack {
-                            Spacer()
-                            pointSection
-                        }
-                    }
-                    Text("*미리보기 입니다.")
-                        .font(.pretendardRegular16)
-                        .foregroundColor(Color.red)
-                    room
-                    customSegmentedView
-                    itemView
-                }
-                
+            VStack {
+                room
+                Text("*미리보기 입니다.")
+                    .font(.pretendardRegular16)
+                    .foregroundColor(Color.red)
+                    .padding(.top, -20)
+                    .padding(.bottom, 10)
+                customSegmentedView
+                itemView
             }
             .padding(16)
             .background {
                 LinearGradient( colors: [Color.accentColor.opacity(0.4), Color.white.opacity(0.67)], startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
             }
             .edgesIgnoringSafeArea(.bottom)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: backButton, trailing: pointSection)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("스토어")
+                        .font(.pretendardBold18)
+                }
+            }
         }
     }
 }
@@ -47,6 +49,18 @@ struct StoreView: View {
 }
 
 extension StoreView {
+    
+    private var backButton: some View {
+        Button{
+            self.presentationMode.wrappedValue.dismiss()
+        } label: {
+            HStack {
+                Image(systemName: "chevron.left") // 화살표 Image
+                    .aspectRatio(contentMode: .fit)
+                Text("Back")
+            }
+        }
+    }
     
     private var pointSection: some View {
         HStack {
@@ -63,7 +77,8 @@ extension StoreView {
             Text("11")
                 .font(.pretendardMedium16)
                 .fontWeight(.regular)
-                .padding(.trailing, 18)
+            Text("0")
+                .foregroundColor(Color.clear)
         }
         .background(Color.white.opacity(0.4))
         .cornerRadius(50)

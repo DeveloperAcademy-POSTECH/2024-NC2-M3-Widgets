@@ -60,7 +60,8 @@ extension ContentView {
             Text("11")
                 .font(.pretendardMedium16)
                 .fontWeight(.regular)
-                .padding(.trailing, 18)
+            Text("0")
+                .foregroundColor(Color.clear)
         }
         .background(Color.white.opacity(0.4))
         .cornerRadius(50)
