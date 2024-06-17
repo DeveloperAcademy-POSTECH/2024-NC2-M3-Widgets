@@ -152,14 +152,18 @@ extension ContentView {
     private var itemView: some View {
         ScrollView {
             if(selectedTab == 0) {
-                LazyVGrid(columns: columns) {
-                    ForEach((0...20), id: \.self) { _ in
-                        Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                            .cornerRadius(14)
-                            .frame(width: 80, height: 80)
+                Section {
+                    LazyVGrid(columns: columns) {
+                        ForEach((0...18), id: \.self) { _ in
+                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                                .cornerRadius(14)
+                                .frame(width: 80, height: 80)
+                        }
                     }
+                    .padding(.bottom, 16)
                 }
-                .padding(.bottom, 16)
+                .padding(.leading, 10)
+                .padding(.trailing, 10)
             } else if(selectedTab == 1) {
                 Section {
                     HStack {
