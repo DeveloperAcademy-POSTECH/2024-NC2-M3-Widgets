@@ -11,14 +11,38 @@
 		10B0B4852C1FCC53003CB840 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0B4842C1FCC53003CB840 /* ContentView.swift */; };
 		10B0B4872C1FCC54003CB840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4862C1FCC54003CB840 /* Assets.xcassets */; };
 		10B0B48A2C1FCC54003CB840 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4892C1FCC54003CB840 /* Preview Assets.xcassets */; };
+		10B0B49F2C1FD9F3003CB840 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0B4922C1FD9F3003CB840 /* FontManager.swift */; };
+		10B0B4A02C1FD9F3003CB840 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4932C1FD9F3003CB840 /* Pretendard-Black.otf */; };
+		10B0B4A12C1FD9F3003CB840 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4942C1FD9F3003CB840 /* Pretendard-Bold.otf */; };
+		10B0B4A22C1FD9F3003CB840 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4952C1FD9F3003CB840 /* Pretendard-ExtraBold.otf */; };
+		10B0B4A32C1FD9F3003CB840 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4962C1FD9F3003CB840 /* Pretendard-ExtraLight.otf */; };
+		10B0B4A42C1FD9F3003CB840 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4972C1FD9F3003CB840 /* Pretendard-Light.otf */; };
+		10B0B4A52C1FD9F3003CB840 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4982C1FD9F3003CB840 /* Pretendard-Medium.otf */; };
+		10B0B4A62C1FD9F3003CB840 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4992C1FD9F3003CB840 /* Pretendard-Regular.otf */; };
+		10B0B4A72C1FD9F3003CB840 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B49A2C1FD9F3003CB840 /* Pretendard-SemiBold.otf */; };
+		10B0B4A82C1FD9F3003CB840 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B49B2C1FD9F3003CB840 /* Pretendard-Thin.otf */; };
+		10B0B4AC2C1FDCEA003CB840 /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 10B0B4AB2C1FDCEA003CB840 /* AxisSegmentedView */; };
+		10B0B4AE2C1FE209003CB840 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0B4AD2C1FE209003CB840 /* StoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10B0B47F2C1FCC53003CB840 /* PAWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B0B4822C1FCC53003CB840 /* PAWSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAWSApp.swift; sourceTree = "<group>"; };
 		10B0B4842C1FCC53003CB840 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		10B0B4862C1FCC54003CB840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10B0B4862C1FCC54003CB840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		10B0B4892C1FCC54003CB840 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10B0B4922C1FD9F3003CB840 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		10B0B4932C1FD9F3003CB840 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		10B0B4942C1FD9F3003CB840 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		10B0B4952C1FD9F3003CB840 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		10B0B4962C1FD9F3003CB840 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		10B0B4972C1FD9F3003CB840 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		10B0B4982C1FD9F3003CB840 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		10B0B4992C1FD9F3003CB840 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		10B0B49A2C1FD9F3003CB840 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		10B0B49B2C1FD9F3003CB840 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		10B0B4A92C1FDAED003CB840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10B0B4AD2C1FE209003CB840 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B0B4AC2C1FDCEA003CB840 /* AxisSegmentedView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +76,11 @@
 		10B0B4812C1FCC53003CB840 /* PAWS */ = {
 			isa = PBXGroup;
 			children = (
+				10B0B4A92C1FDAED003CB840 /* Info.plist */,
 				10B0B4822C1FCC53003CB840 /* PAWSApp.swift */,
 				10B0B4842C1FCC53003CB840 /* ContentView.swift */,
-				10B0B4862C1FCC54003CB840 /* Assets.xcassets */,
+				10B0B4AD2C1FE209003CB840 /* StoreView.swift */,
+				10B0B49D2C1FD9F3003CB840 /* Resources */,
 				10B0B4882C1FCC54003CB840 /* Preview Content */,
 			);
 			path = PAWS;
@@ -65,6 +92,40 @@
 				10B0B4892C1FCC54003CB840 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10B0B4912C1FD9F3003CB840 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				10B0B4862C1FCC54003CB840 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		10B0B49C2C1FD9F3003CB840 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				10B0B4922C1FD9F3003CB840 /* FontManager.swift */,
+				10B0B4932C1FD9F3003CB840 /* Pretendard-Black.otf */,
+				10B0B4942C1FD9F3003CB840 /* Pretendard-Bold.otf */,
+				10B0B4952C1FD9F3003CB840 /* Pretendard-ExtraBold.otf */,
+				10B0B4962C1FD9F3003CB840 /* Pretendard-ExtraLight.otf */,
+				10B0B4972C1FD9F3003CB840 /* Pretendard-Light.otf */,
+				10B0B4982C1FD9F3003CB840 /* Pretendard-Medium.otf */,
+				10B0B4992C1FD9F3003CB840 /* Pretendard-Regular.otf */,
+				10B0B49A2C1FD9F3003CB840 /* Pretendard-SemiBold.otf */,
+				10B0B49B2C1FD9F3003CB840 /* Pretendard-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		10B0B49D2C1FD9F3003CB840 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10B0B4912C1FD9F3003CB840 /* Assets */,
+				10B0B49C2C1FD9F3003CB840 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +144,9 @@
 			dependencies = (
 			);
 			name = PAWS;
+			packageProductDependencies = (
+				10B0B4AB2C1FDCEA003CB840 /* AxisSegmentedView */,
+			);
 			productName = PAWS;
 			productReference = 10B0B47F2C1FCC53003CB840 /* PAWS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +175,9 @@
 				Base,
 			);
 			mainGroup = 10B0B4762C1FCC52003CB840;
+			packageReferences = (
+				10B0B4AA2C1FDCEA003CB840 /* XCRemoteSwiftPackageReference "AxisSegmentedView" */,
+			);
 			productRefGroup = 10B0B4802C1FCC53003CB840 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +192,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B0B4A72C1FD9F3003CB840 /* Pretendard-SemiBold.otf in Resources */,
+				10B0B4A32C1FD9F3003CB840 /* Pretendard-ExtraLight.otf in Resources */,
+				10B0B4A42C1FD9F3003CB840 /* Pretendard-Light.otf in Resources */,
+				10B0B4A82C1FD9F3003CB840 /* Pretendard-Thin.otf in Resources */,
 				10B0B48A2C1FCC54003CB840 /* Preview Assets.xcassets in Resources */,
+				10B0B4A12C1FD9F3003CB840 /* Pretendard-Bold.otf in Resources */,
+				10B0B4A22C1FD9F3003CB840 /* Pretendard-ExtraBold.otf in Resources */,
+				10B0B4A02C1FD9F3003CB840 /* Pretendard-Black.otf in Resources */,
+				10B0B4A62C1FD9F3003CB840 /* Pretendard-Regular.otf in Resources */,
 				10B0B4872C1FCC54003CB840 /* Assets.xcassets in Resources */,
+				10B0B4A52C1FD9F3003CB840 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B0B4852C1FCC53003CB840 /* ContentView.swift in Sources */,
+				10B0B49F2C1FD9F3003CB840 /* FontManager.swift in Sources */,
+				10B0B4AE2C1FE209003CB840 /* StoreView.swift in Sources */,
 				10B0B4832C1FCC53003CB840 /* PAWSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +353,7 @@
 				DEVELOPMENT_TEAM = 3GB5WJ43G4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PAWS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +383,7 @@
 				DEVELOPMENT_TEAM = 3GB5WJ43G4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PAWS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10B0B4AA2C1FDCEA003CB840 /* XCRemoteSwiftPackageReference "AxisSegmentedView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jasudev/AxisSegmentedView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10B0B4AB2C1FDCEA003CB840 /* AxisSegmentedView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10B0B4AA2C1FDCEA003CB840 /* XCRemoteSwiftPackageReference "AxisSegmentedView" */;
+			productName = AxisSegmentedView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 10B0B4772C1FCC52003CB840 /* Project object */;
 }
