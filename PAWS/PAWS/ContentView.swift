@@ -67,7 +67,7 @@ extension ContentView {
     }
     
     private var title: some View {
-        Text("PawRoom")
+        Text("PAWS")
             .font(.pretendardBold18)
             .foregroundColor(Color.black)
     }
@@ -115,9 +115,9 @@ extension ContentView {
     
     private var customSegmentedView: some View {
         ZStack {
-//            RoundedRectangle(cornerRadius: 50)
-//                .foregroundColor(Color.gray.opacity(0.2))
-//                .frame(height: 40)
+            RoundedRectangle(cornerRadius: 50)
+                .foregroundColor(Color.white.opacity(0.2))
+                .frame(height: 40)
             
             AxisSegmentedView(selection: $selectedTab, constant: .init()) {
                 Group{
@@ -151,15 +151,93 @@ extension ContentView {
     
     private var itemView: some View {
         ScrollView {
-              LazyVGrid(columns: columns) {
-                ForEach((0...19), id: \.self) { _ in
-                  Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                    .cornerRadius(14)
-                    .frame(width: 84, height: 84)
-                    .padding()
+            if(selectedTab == 0) {
+                LazyVGrid(columns: columns) {
+                    ForEach((0...20), id: \.self) { _ in
+                        Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                            .cornerRadius(14)
+                            .frame(width: 80, height: 80)
+                    }
                 }
-              }
+                .padding(.bottom, 16)
+            } else if(selectedTab == 1) {
+                Section {
+                    HStack {
+                        Text("Character")
+                            .font(.pretendardRegular14)
+                            .foregroundColor(Color.black.opacity(0.6))
+                        Spacer()
+                    }
+                    LazyVGrid(columns: columns) {
+                        ForEach((0...1), id: \.self) { _ in
+                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                                .cornerRadius(14)
+                                .frame(width: 80, height: 80)
+                        }
+                    }
+                    .padding(.bottom, 16)
+                }
+                .padding(.leading, 10)
+                .padding(.trailing, 10)
+                
+                Section {
+                    HStack {
+                        Text("Accessory")
+                            .font(.pretendardRegular14)
+                            .foregroundColor(Color.black.opacity(0.6))
+                        Spacer()
+                    }
+                    LazyVGrid(columns: columns) {
+                        ForEach((0...10), id: \.self) { _ in
+                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                                .cornerRadius(14)
+                                .frame(width: 80, height: 80)
+                        }
+                    }
+                    .padding(.bottom, 16)
+                }
+                .padding(.leading, 10)
+                .padding(.trailing, 10)
+            } else if(selectedTab == 2) {
+                Section {
+                    HStack {
+                        Text("Left Seat")
+                            .font(.pretendardRegular14)
+                            .foregroundColor(Color.black.opacity(0.6))
+                        Spacer()
+                    }
+                    LazyVGrid(columns: columns) {
+                        ForEach((0...3), id: \.self) { _ in
+                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                                .cornerRadius(14)
+                                .frame(width: 80, height: 80)
+                        }
+                    }
+                    .padding(.bottom, 16)
+                }
+                .padding(.leading, 10)
+                .padding(.trailing, 10)
+                
+                Section {
+                    HStack {
+                        Text("Right Seat")
+                            .font(.pretendardRegular14)
+                            .foregroundColor(Color.black.opacity(0.6))
+                        Spacer()
+                    }
+                    LazyVGrid(columns: columns) {
+                        ForEach((0...6), id: \.self) { _ in
+                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                                .cornerRadius(14)
+                                .frame(width: 80, height: 80)
+                        }
+                    }
+                    .padding(.bottom, 16)
+                }
+                .padding(.leading, 10)
+                .padding(.trailing, 10)
             }
+        }
     }
     
 }
