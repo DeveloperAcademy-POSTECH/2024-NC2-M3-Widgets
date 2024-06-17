@@ -140,21 +140,48 @@ extension StoreView {
         }
     }
     
+    private var item: some View {
+        VStack {
+            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                .cornerRadius(14)
+                .frame(width: 80, height: 80)
+            itemPrice
+        }
+    }
+    
+    private var itemPrice: some View {
+        HStack {
+            Circle()
+                .foregroundColor(Color.white)
+                .overlay {
+                    Image(systemName: "pawprint.fill")
+                        .font(.caption2)
+                        .foregroundColor(Color.accentColor)
+                }
+                .frame(height: 20)
+                .padding(5)
+                .padding(.trailing, -5)
+            Text("11")
+                .font(.pretendardRegular16)
+            Text("0")
+                .foregroundColor(Color.clear)
+        }
+        .padding(.top, -6)
+    }
+
+    
     private var itemView: some View {
         ScrollView {
             if(selectedTab == 0) {
                 Section {
                     LazyVGrid(columns: columns) {
                         ForEach((0...18), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
-                    .padding(.bottom, 16)
+                    .padding(.top, 6)
                 }
-                .padding(.leading, 10)
-                .padding(.trailing, 10)
+                .padding(10)
             } else if(selectedTab == 1) {
                 Section {
                     HStack {
@@ -163,11 +190,10 @@ extension StoreView {
                             .foregroundColor(Color.black.opacity(0.6))
                         Spacer()
                     }
+                    .padding(.top, 10)
                     LazyVGrid(columns: columns) {
                         ForEach((0...1), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -184,9 +210,7 @@ extension StoreView {
                     }
                     LazyVGrid(columns: columns) {
                         ForEach((0...10), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -201,11 +225,10 @@ extension StoreView {
                             .foregroundColor(Color.black.opacity(0.6))
                         Spacer()
                     }
+                    .padding(.top, 10)
                     LazyVGrid(columns: columns) {
                         ForEach((0...3), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -222,9 +245,7 @@ extension StoreView {
                     }
                     LazyVGrid(columns: columns) {
                         ForEach((0...6), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)

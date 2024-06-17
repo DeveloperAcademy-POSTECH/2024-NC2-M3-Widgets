@@ -150,21 +150,25 @@ extension ContentView {
         }
     }
     
+    private var item: some View {
+        VStack {
+            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                .cornerRadius(14)
+                .frame(width: 80, height: 80)
+        }
+    }
+    
     private var itemView: some View {
         ScrollView {
             if(selectedTab == 0) {
                 Section {
                     LazyVGrid(columns: columns) {
                         ForEach((0...18), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
-                    .padding(.bottom, 16)
                 }
-                .padding(.leading, 10)
-                .padding(.trailing, 10)
+                .padding(10)
             } else if(selectedTab == 1) {
                 Section {
                     HStack {
@@ -173,11 +177,10 @@ extension ContentView {
                             .foregroundColor(Color.black.opacity(0.6))
                         Spacer()
                     }
+                    .padding(.top, 5)
                     LazyVGrid(columns: columns) {
                         ForEach((0...1), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -194,9 +197,7 @@ extension ContentView {
                     }
                     LazyVGrid(columns: columns) {
                         ForEach((0...10), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -211,11 +212,10 @@ extension ContentView {
                             .foregroundColor(Color.black.opacity(0.6))
                         Spacer()
                     }
+                    .padding(.top, 5)
                     LazyVGrid(columns: columns) {
                         ForEach((0...3), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -232,9 +232,7 @@ extension ContentView {
                     }
                     LazyVGrid(columns: columns) {
                         ForEach((0...6), id: \.self) { _ in
-                            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                                .cornerRadius(14)
-                                .frame(width: 80, height: 80)
+                            item
                         }
                     }
                     .padding(.bottom, 16)
