@@ -152,9 +152,14 @@ extension ContentView {
     
     private var item: some View {
         VStack {
-            Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                .cornerRadius(14)
-                .frame(width: 80, height: 80)
+            Button{
+                LiveActivityManager.shared.onLiveActivity()
+                LiveActivityManager.shared.updateLiveActivity(emoji: "🤩")
+            } label: {
+                Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
+                    .cornerRadius(14)
+                    .frame(width: 80, height: 80)
+            }
         }
     }
     

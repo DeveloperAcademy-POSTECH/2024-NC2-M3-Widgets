@@ -2,22 +2,12 @@
 //  PawsWidgetLiveActivity.swift
 //  PawsWidget
 //
-//  Created by kimjihee on 6/17/24.
+//  Created by kimjihee on 6/18/24.
 //
 
 import ActivityKit
 import WidgetKit
 import SwiftUI
-
-struct PawsWidgetAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
-    }
-
-    // Fixed non-changing properties about your activity go here!
-    var name: String
-}
 
 struct PawsWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {

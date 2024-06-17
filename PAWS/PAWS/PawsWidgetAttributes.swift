@@ -5,14 +5,14 @@
 //  Created by kimjihee on 6/17/24.
 //
 
-import SwiftUI
+import ActivityKit
 
-struct PawsWidgetAttributes: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct PawsWidgetAttributes: ActivityAttributes {
+    public struct ContentState: Codable, Hashable {
+        // Dynamic stateful properties about your activity go here!
+        var emoji: String
     }
-}
 
-#Preview {
-    PawsWidgetAttributes()
+    // Fixed non-changing properties about your activity go here!
+    var name: String
 }

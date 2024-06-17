@@ -9,10 +9,10 @@ import Foundation
 import ActivityKit
 
 @available(iOS 16.1, *)
-@objc class TestLiveActivityManager: NSObject {
+@objc class LiveActivityManager: NSObject {
     private var activity: Activity<PawsWidgetAttributes>?
     
-    @objc static let shared = TestLiveActivityManager()
+    @objc static let shared = LiveActivityManager()
     private init(activity: Activity<PawsWidgetAttributes>? = nil) {
         self.activity = activity
     }

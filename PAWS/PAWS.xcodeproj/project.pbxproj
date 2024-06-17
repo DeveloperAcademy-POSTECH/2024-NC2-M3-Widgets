@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105EBC682C20895D00CACEA4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBC672C20895D00CACEA4 /* WidgetKit.framework */; };
+		105EBC6A2C20895D00CACEA4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBC692C20895D00CACEA4 /* SwiftUI.framework */; };
+		105EBC6D2C20895D00CACEA4 /* PawsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC6C2C20895D00CACEA4 /* PawsWidgetBundle.swift */; };
+		105EBC6F2C20895D00CACEA4 /* PawsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC6E2C20895D00CACEA4 /* PawsWidgetLiveActivity.swift */; };
+		105EBC712C20895D00CACEA4 /* PawsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC702C20895D00CACEA4 /* PawsWidget.swift */; };
+		105EBC732C20895D00CACEA4 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC722C20895D00CACEA4 /* AppIntent.swift */; };
+		105EBC752C20895E00CACEA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105EBC742C20895E00CACEA4 /* Assets.xcassets */; };
+		105EBC792C20895E00CACEA4 /* PawsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 105EBC652C20895D00CACEA4 /* PawsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		105EBC802C20897800CACEA4 /* PawsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7E2C20897800CACEA4 /* PawsWidgetAttributes.swift */; };
+		105EBC812C20897800CACEA4 /* PawsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7E2C20897800CACEA4 /* PawsWidgetAttributes.swift */; };
+		105EBC822C20897800CACEA4 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */; };
+		105EBC832C20897800CACEA4 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */; };
 		10B0B4832C1FCC53003CB840 /* PAWSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0B4822C1FCC53003CB840 /* PAWSApp.swift */; };
 		10B0B4852C1FCC53003CB840 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0B4842C1FCC53003CB840 /* ContentView.swift */; };
 		10B0B4872C1FCC54003CB840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B4862C1FCC54003CB840 /* Assets.xcassets */; };
@@ -27,7 +39,42 @@
 		10B0B4B32C2016F5003CB840 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 10B0B4B22C2016F5003CB840 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		105EBC772C20895E00CACEA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B0B4772C1FCC52003CB840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105EBC642C20895D00CACEA4;
+			remoteInfo = PawsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		105EBC7D2C20895E00CACEA4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				105EBC792C20895E00CACEA4 /* PawsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		105EBC652C20895D00CACEA4 /* PawsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PawsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		105EBC672C20895D00CACEA4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		105EBC692C20895D00CACEA4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		105EBC6C2C20895D00CACEA4 /* PawsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawsWidgetBundle.swift; sourceTree = "<group>"; };
+		105EBC6E2C20895D00CACEA4 /* PawsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		105EBC702C20895D00CACEA4 /* PawsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawsWidget.swift; sourceTree = "<group>"; };
+		105EBC722C20895D00CACEA4 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		105EBC742C20895E00CACEA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		105EBC762C20895E00CACEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105EBC7E2C20897800CACEA4 /* PawsWidgetAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PawsWidgetAttributes.swift; sourceTree = "<group>"; };
+		105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
 		10B0B47F2C1FCC53003CB840 /* PAWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B0B4822C1FCC53003CB840 /* PAWSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAWSApp.swift; sourceTree = "<group>"; };
 		10B0B4842C1FCC53003CB840 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +95,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		105EBC622C20895D00CACEA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105EBC6A2C20895D00CACEA4 /* SwiftUI.framework in Frameworks */,
+				105EBC682C20895D00CACEA4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10B0B47C2C1FCC53003CB840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +117,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105EBC662C20895D00CACEA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				105EBC672C20895D00CACEA4 /* WidgetKit.framework */,
+				105EBC692C20895D00CACEA4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		105EBC6B2C20895D00CACEA4 /* PawsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				105EBC6C2C20895D00CACEA4 /* PawsWidgetBundle.swift */,
+				105EBC6E2C20895D00CACEA4 /* PawsWidgetLiveActivity.swift */,
+				105EBC702C20895D00CACEA4 /* PawsWidget.swift */,
+				105EBC722C20895D00CACEA4 /* AppIntent.swift */,
+				105EBC742C20895E00CACEA4 /* Assets.xcassets */,
+				105EBC762C20895E00CACEA4 /* Info.plist */,
+			);
+			path = PawsWidget;
+			sourceTree = "<group>";
+		};
 		10B0B4762C1FCC52003CB840 = {
 			isa = PBXGroup;
 			children = (
 				10B0B4812C1FCC53003CB840 /* PAWS */,
+				105EBC6B2C20895D00CACEA4 /* PawsWidget */,
+				105EBC662C20895D00CACEA4 /* Frameworks */,
 				10B0B4802C1FCC53003CB840 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				10B0B47F2C1FCC53003CB840 /* PAWS.app */,
+				105EBC652C20895D00CACEA4 /* PawsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +165,8 @@
 				10B0B4822C1FCC53003CB840 /* PAWSApp.swift */,
 				10B0B4842C1FCC53003CB840 /* ContentView.swift */,
 				10B0B4AD2C1FE209003CB840 /* StoreView.swift */,
+				105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */,
+				105EBC7E2C20897800CACEA4 /* PawsWidgetAttributes.swift */,
 				10B0B49D2C1FD9F3003CB840 /* Resources */,
 				10B0B4882C1FCC54003CB840 /* Preview Content */,
 			);
@@ -135,6 +218,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		105EBC642C20895D00CACEA4 /* PawsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105EBC7A2C20895E00CACEA4 /* Build configuration list for PBXNativeTarget "PawsWidgetExtension" */;
+			buildPhases = (
+				105EBC612C20895D00CACEA4 /* Sources */,
+				105EBC622C20895D00CACEA4 /* Frameworks */,
+				105EBC632C20895D00CACEA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PawsWidgetExtension;
+			productName = PawsWidgetExtension;
+			productReference = 105EBC652C20895D00CACEA4 /* PawsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		10B0B47E2C1FCC53003CB840 /* PAWS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10B0B48D2C1FCC54003CB840 /* Build configuration list for PBXNativeTarget "PAWS" */;
@@ -142,10 +242,12 @@
 				10B0B47B2C1FCC53003CB840 /* Sources */,
 				10B0B47C2C1FCC53003CB840 /* Frameworks */,
 				10B0B47D2C1FCC53003CB840 /* Resources */,
+				105EBC7D2C20895E00CACEA4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				105EBC782C20895E00CACEA4 /* PBXTargetDependency */,
 			);
 			name = PAWS;
 			packageProductDependencies = (
@@ -167,6 +269,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					105EBC642C20895D00CACEA4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					10B0B47E2C1FCC53003CB840 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -190,11 +295,20 @@
 			projectRoot = "";
 			targets = (
 				10B0B47E2C1FCC53003CB840 /* PAWS */,
+				105EBC642C20895D00CACEA4 /* PawsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		105EBC632C20895D00CACEA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105EBC752C20895E00CACEA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10B0B47D2C1FCC53003CB840 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,20 +330,97 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		105EBC612C20895D00CACEA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105EBC6D2C20895D00CACEA4 /* PawsWidgetBundle.swift in Sources */,
+				105EBC732C20895D00CACEA4 /* AppIntent.swift in Sources */,
+				105EBC832C20897800CACEA4 /* LiveActivityManager.swift in Sources */,
+				105EBC712C20895D00CACEA4 /* PawsWidget.swift in Sources */,
+				105EBC812C20897800CACEA4 /* PawsWidgetAttributes.swift in Sources */,
+				105EBC6F2C20895D00CACEA4 /* PawsWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10B0B47B2C1FCC53003CB840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				10B0B4852C1FCC53003CB840 /* ContentView.swift in Sources */,
 				10B0B49F2C1FD9F3003CB840 /* FontManager.swift in Sources */,
+				105EBC822C20897800CACEA4 /* LiveActivityManager.swift in Sources */,
 				10B0B4AE2C1FE209003CB840 /* StoreView.swift in Sources */,
+				105EBC802C20897800CACEA4 /* PawsWidgetAttributes.swift in Sources */,
 				10B0B4832C1FCC53003CB840 /* PAWSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		105EBC782C20895E00CACEA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105EBC642C20895D00CACEA4 /* PawsWidgetExtension */;
+			targetProxy = 105EBC772C20895E00CACEA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		105EBC7B2C20895E00CACEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GB5WJ43G4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PawsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PawsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSDevJoy.PAWS.PawsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		105EBC7C2C20895E00CACEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GB5WJ43G4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PawsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PawsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSDevJoy.PAWS.PawsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		10B0B48B2C1FCC54003CB840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -352,6 +543,7 @@
 		10B0B48E2C1FCC54003CB840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +574,7 @@
 		10B0B48F2C1FCC54003CB840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +605,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		105EBC7A2C20895E00CACEA4 /* Build configuration list for PBXNativeTarget "PawsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105EBC7B2C20895E00CACEA4 /* Debug */,
+				105EBC7C2C20895E00CACEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		10B0B47A2C1FCC52003CB840 /* Build configuration list for PBXProject "PAWS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
