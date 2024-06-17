@@ -23,6 +23,8 @@
 		10B0B4A82C1FD9F3003CB840 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0B49B2C1FD9F3003CB840 /* Pretendard-Thin.otf */; };
 		10B0B4AC2C1FDCEA003CB840 /* AxisSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 10B0B4AB2C1FDCEA003CB840 /* AxisSegmentedView */; };
 		10B0B4AE2C1FE209003CB840 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B0B4AD2C1FE209003CB840 /* StoreView.swift */; };
+		10B0B4B12C2016F5003CB840 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 10B0B4B02C2016F5003CB840 /* FirebaseDatabase */; };
+		10B0B4B32C2016F5003CB840 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 10B0B4B22C2016F5003CB840 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B0B4B12C2016F5003CB840 /* FirebaseDatabase in Frameworks */,
 				10B0B4AC2C1FDCEA003CB840 /* AxisSegmentedView in Frameworks */,
+				10B0B4B32C2016F5003CB840 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +150,8 @@
 			name = PAWS;
 			packageProductDependencies = (
 				10B0B4AB2C1FDCEA003CB840 /* AxisSegmentedView */,
+				10B0B4B02C2016F5003CB840 /* FirebaseDatabase */,
+				10B0B4B22C2016F5003CB840 /* FirebaseFirestore */,
 			);
 			productName = PAWS;
 			productReference = 10B0B47F2C1FCC53003CB840 /* PAWS.app */;
@@ -177,6 +183,7 @@
 			mainGroup = 10B0B4762C1FCC52003CB840;
 			packageReferences = (
 				10B0B4AA2C1FDCEA003CB840 /* XCRemoteSwiftPackageReference "AxisSegmentedView" */,
+				10B0B4AF2C2016F5003CB840 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 10B0B4802C1FCC53003CB840 /* Products */;
 			projectDirPath = "";
@@ -434,6 +441,14 @@
 				minimumVersion = 0.5.2;
 			};
 		};
+		10B0B4AF2C2016F5003CB840 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -441,6 +456,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 10B0B4AA2C1FDCEA003CB840 /* XCRemoteSwiftPackageReference "AxisSegmentedView" */;
 			productName = AxisSegmentedView;
+		};
+		10B0B4B02C2016F5003CB840 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10B0B4AF2C2016F5003CB840 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		10B0B4B22C2016F5003CB840 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10B0B4AF2C2016F5003CB840 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
