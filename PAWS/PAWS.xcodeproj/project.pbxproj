@@ -19,8 +19,6 @@
 		105EBC812C20897800CACEA4 /* PawsWidgetAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7E2C20897800CACEA4 /* PawsWidgetAttributes.swift */; };
 		105EBC822C20897800CACEA4 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */; };
 		105EBC832C20897800CACEA4 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */; };
-		105EBC902C20966800CACEA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 105EBC8F2C20966800CACEA4 /* GoogleService-Info.plist */; };
-		105EBC912C20966800CACEA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 105EBC8F2C20966800CACEA4 /* GoogleService-Info.plist */; };
 		105EBC942C2098A100CACEA4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC932C2098A100CACEA4 /* Item.swift */; };
 		105EBC952C2098A100CACEA4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105EBC932C2098A100CACEA4 /* Item.swift */; };
 		105EBC982C20B4D900CACEA4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 105EBC972C20B4D900CACEA4 /* SDWebImageSwiftUI */; };
@@ -82,7 +80,6 @@
 		105EBC762C20895E00CACEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		105EBC7E2C20897800CACEA4 /* PawsWidgetAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PawsWidgetAttributes.swift; sourceTree = "<group>"; };
 		105EBC7F2C20897800CACEA4 /* LiveActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
-		105EBC8F2C20966800CACEA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		105EBC932C2098A100CACEA4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Item.swift; path = PawsWidget/Item.swift; sourceTree = SOURCE_ROOT; };
 		10B0B47F2C1FCC53003CB840 /* PAWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B0B4822C1FCC53003CB840 /* PAWSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAWSApp.swift; sourceTree = "<group>"; };
@@ -162,7 +159,6 @@
 		10B0B4762C1FCC52003CB840 = {
 			isa = PBXGroup;
 			children = (
-				105EBC8F2C20966800CACEA4 /* GoogleService-Info.plist */,
 				10B0B4812C1FCC53003CB840 /* PAWS */,
 				105EBC6B2C20895D00CACEA4 /* PawsWidget */,
 				105EBC662C20895D00CACEA4 /* Frameworks */,
@@ -332,7 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				105EBC752C20895E00CACEA4 /* Assets.xcassets in Resources */,
-				105EBC912C20966800CACEA4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B0B4A72C1FD9F3003CB840 /* Pretendard-SemiBold.otf in Resources */,
-				105EBC902C20966800CACEA4 /* GoogleService-Info.plist in Resources */,
 				10B0B4A32C1FD9F3003CB840 /* Pretendard-ExtraLight.otf in Resources */,
 				10B0B4A42C1FD9F3003CB840 /* Pretendard-Light.otf in Resources */,
 				10B0B4A82C1FD9F3003CB840 /* Pretendard-Thin.otf in Resources */,

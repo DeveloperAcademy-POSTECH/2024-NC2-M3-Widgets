@@ -7,18 +7,11 @@
 
 import SwiftUI
 import AxisSegmentedView
-import FirebaseFirestore
-import SDWebImageSwiftUI
 
 struct ContentView: View {
     @State private var isStoreButtonTapped = false
     @State private var selectedTab: Int = 0
     @State var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
-    @State private var characterAccessoryItems: [Item] = []
-    @State private var characterBodyItems: [Item] = []
-//    @State private var CharacterAccessoryItems: [Item] = []
-//    @State private var CharacterAccessoryItems: [Item] = []
-    @State private var errorMessage: String?
     
     var body: some View {
         NavigationStack {
@@ -42,98 +35,8 @@ struct ContentView: View {
                 LinearGradient( colors: [Color.accentColor.opacity(0.4), Color.white.opacity(0.67)], startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
             }
             .edgesIgnoringSafeArea(.bottom)
-            .onAppear {
-//                fetchAllItem()
-            }
         }
     }
-    
-    func fetchAllItem() {
-        fetchCharacterBodyItems { items, error in
-            if let error = error {
-                errorMessage = error.localizedDescription
-                print("error :: \(errorMessage)")
-            } else if let items = items {
-                self.characterBodyItems = items
-                print("item :: \(items)")
-            }
-        }
-        fetchCharacterAccessoryItems { items, error in
-            if let error = error {
-                errorMessage = error.localizedDescription
-                print("error :: \(errorMessage)")
-            } else if let items = items {
-                self.characterAccessoryItems = items
-                print("item :: \(items)")
-            }
-        }
-    }
-    
-//    /Item/Character/Accessory
-
-    func fetchCharacterAccessoryItems (completion: @escaping ([Item]?, Error?) -> Void) {
-        let db = Firestore.firestore()
-        db.collection("Item").document("Character").collection("Accessory").getDocuments { (querySnapshot, error) in
-            if let error = error {
-                completion(nil, error)
-                print("error ::: \(errorMessage)")
-            } else {
-                var characterAccessoryItems: [Item] = []
-                for document in querySnapshot!.documents {
-                    if let imageURLString = document.data()["imageURL"] as? String,
-                        let imageURL = URL(string: imageURLString) {
-                        let item = Item(imageURL: imageURL)
-                        characterAccessoryItems.append(item)
-                        print("item :: \(characterAccessoryItems)")
-                    }
-                }
-                completion(characterAccessoryItems, nil)
-            }
-        }
-    }
-    
-    func fetchCharacterBodyItems (completion: @escaping ([Item]?, Error?) -> Void) {
-        let db = Firestore.firestore()
-        db.collection("Item").document("Character").collection("Body").getDocuments { (querySnapshot, error) in
-            if let error = error {
-                completion(nil, error)
-                print("error ::: \(errorMessage)")
-            } else {
-                var characterBodyItems: [Item] = []
-                for document in querySnapshot!.documents {
-                    if let imageURLString = document.data()["imageURL"] as? String,
-                        let imageURL = URL(string: imageURLString) {
-                        let item = Item(imageURL: imageURL)
-                        characterBodyItems.append(item)
-                        print("item :: \(characterBodyItems)")
-                    }
-                }
-                completion(characterBodyItems, nil)
-            }
-        }
-    }
-    
-    
-//    func fetchCharacterBodyItems (completion: @escaping ([Item]?, Error?) -> Void) {
-//        let db = Firestore.firestore()
-//        db.collection("Item").document("Character").collection("Body").getDocuments { (querySnapshot, error) in
-//            if let error = error {
-//                completion(nil, error)
-//                print("error ::: \(errorMessage)")
-//            } else {
-//                var characterBodyItems: [Item] = []
-//                for document in querySnapshot!.documents {
-//                    if let imageURLString = document.data()["imageURL"] as? String,
-//                        let imageURL = URL(string: imageURLString) {
-//                        let item = Item(imageURL: imageURL)
-//                        characterBodyItems.append(item)
-//                        print("item :: \(characterBodyItems)")
-//                    }
-//                }
-//                completion(characterBodyItems, nil)
-//            }
-//        }
-//    }
 }
 
 #Preview {
@@ -247,49 +150,6 @@ extension ContentView {
         }
     }
     
-    private var CharacterAccessoryItem: some View {
-        VStack {
-            Button{
-                LiveActivityManager.shared.onLiveActivity()
-                LiveActivityManager.shared.updateLiveActivity(emoji: "💕")
-            } label: {
-                Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                    .cornerRadius(14)
-                    .frame(width: 80, height: 80)
-                    .overlay {
-                        ForEach(characterAccessoryItems, id: \.imageURL) { item in
-                            WebImage(url: item.imageURL)
-                                .resizable()
-                                .frame(width: 80)
-                                .clipped()
-                                .padding(.bottom, 10)
-                        }
-                    }
-            }
-        }
-    }
-    private var CharacterBodyItem: some View {
-        VStack {
-            Button{
-                LiveActivityManager.shared.onLiveActivity()
-                LiveActivityManager.shared.updateLiveActivity(emoji: "💕")
-            } label: {
-                Color(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1))
-                    .cornerRadius(14)
-                    .frame(width: 80, height: 80)
-                    .overlay {
-                        ForEach(characterBodyItems, id: \.imageURL) { item in
-                            WebImage(url: item.imageURL)
-                                .resizable()
-                                .frame(width: 80)
-                                .clipped()
-                                .padding(.bottom, 10)
-                        }
-                    }
-            }
-        }
-    }
-    
     private var item: some View {
         VStack {
             Button{
@@ -325,7 +185,7 @@ extension ContentView {
                     .padding(.top, 5)
                     LazyVGrid(columns: columns) {
                         ForEach((0...1), id: \.self) { _ in
-                            CharacterBodyItem
+                            item
                         }
                     }
                     .padding(.bottom, 16)
@@ -342,7 +202,7 @@ extension ContentView {
                     }
                     LazyVGrid(columns: columns) {
                         ForEach((0...10), id: \.self) { _ in
-                            CharacterAccessoryItem
+                            item
                         }
                     }
                     .padding(.bottom, 16)
