@@ -7,10 +7,15 @@
 
 import SwiftUI
 import FirebaseCore
+//import Firebase
 
 @main
 struct PAWSApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+//    init() {
+//        FirebaseApp.configure()
+//    }
     
     var body: some Scene {
         WindowGroup {
