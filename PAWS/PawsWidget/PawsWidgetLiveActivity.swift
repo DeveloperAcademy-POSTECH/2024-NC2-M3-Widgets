@@ -24,19 +24,25 @@ struct PawsWidgetLiveActivity: Widget {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
+//                    Text("Leading")
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
+//                    Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
+                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom \(context.state.emoji)")
                     Text("Bottom \(context.state.emoji)")
                     // more content
                 }
             } compactLeading: {
-                Text("L")
+                Text("🐶")
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text("\(context.state.emoji)")
             } minimal: {
                 Text(context.state.emoji)
             }

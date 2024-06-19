@@ -185,7 +185,7 @@ extension StoreView {
             } else if(selectedTab == 1) {
                 Section {
                     HStack {
-                        Text("Character")
+                        Text("Body")
                             .font(.pretendardRegular14)
                             .foregroundColor(Color.black.opacity(0.6))
                         Spacer()
