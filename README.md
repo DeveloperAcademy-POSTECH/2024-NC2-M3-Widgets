@@ -47,7 +47,7 @@ WidgetKit을 사용하여 홈 화면의 Widget 뿐만 아니라, Dynamic Island�
 <br/><br/>
 
 ## 🖼️ Prototype
-![프로토타입](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-M3-Widgets/assets/66589666/448ef8ce-de98-406f-b22c-d68282c6d9cf)
+![프로토타입1](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-M3-Widgets/assets/66589666/5b9f6192-a970-4df5-b163-8dd8b2c5a95f)
 ![프로토타입2](https://github.com/DeveloperAcademy-POSTECH/2024-NC2-M3-Widgets/assets/66589666/2a1deff1-3edd-4d12-9e1d-b57d424062f7)
 <br/><br/>
 
