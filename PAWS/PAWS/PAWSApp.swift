@@ -6,29 +6,18 @@
 //
 
 import SwiftUI
-import FirebaseCore
-//import Firebase
 
 @main
 struct PAWSApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-//    init() {
-//        FirebaseApp.configure()
-//    }
+    @StateObject private var dataModel = AppDataModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(dataModel)
+                .onAppear() {
+                    dataModel.point = 100
+                }
         }
     }
-}
-
-class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-
-    return true
-  }
 }
